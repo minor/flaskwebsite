@@ -44,4 +44,4 @@ def get_static_json(path):
 
 if __name__ == "__main__":
     print("running py app")
-    app.run(host="localhost", port=8000, debug=True)
+    app.run()
