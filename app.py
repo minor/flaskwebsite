@@ -27,7 +27,7 @@ def contact():
 
 @app.route('/blog')
 def blog():
-    return redirect("https://saurish.bearblog.dev/")
+    return redirect("https://ss.bearblog.dev/")
 
 @app.errorhandler(404)
 def page_not_found(e):
