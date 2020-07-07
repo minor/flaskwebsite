@@ -27,7 +27,7 @@ def contact():
 
 @app.route('/blog')
 def blog():
-    return redirect("https://ss.bearblog.dev/")
+    return redirect("https://ss.bearblog.dev/blog/")
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -43,5 +43,5 @@ def get_static_json(path):
 
 
 if __name__ == "__main__":
-    print("running py app")
+    print("Website: Running.")
     app.run()
