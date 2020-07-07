@@ -45,8 +45,8 @@ body {
 
 .footer-credits{
   font-family: 'Work Sans';
-  font-weight:normal;
   font-size:14px;
+  align-items: center;
 }
 
 .fixed-wrapper {
