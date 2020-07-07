@@ -1,63 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About - Saurish Srivastava</title>
+{% extends "base.html" %}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--favicon-->
-    <link rel="shortcut icon" type="image/png" href="static/images/fav.png"/>
-
-    <!--fonts-->
-    <link rel='stylesheet'href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700' type='text/css' media='screen'/>
-    <link href='https://fonts.googleapis.com/css?family=Poppins:400,600,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:600,500,400,300' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">
-
-    <!--styesheets-->
-    <link type="text/css" rel="stylesheet" href="/static/css/base.css">
-    <link type="text/css" rel="stylesheet" href="/static/css/about.css">
-
-    <!--tracking-->
-    <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', '', 'auto');
-
-        // Replace the following lines with the plugins you want to use.
-        ga('require', 'eventTracker');
-        ga('require', 'outboundLinkTracker');
-        ga('require', 'urlChangeTracker');
-        ga('require', 'cleanUrlTracker');
-        ga('require', 'maxScrollTracker');
-        ga('require', 'impressionTracker');
-        ga('require', 'outboundLinkTracker');
-        ga('require', 'pageVisibilityTracker');
-        // ...
-        ga('send', 'pageview');
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
-    <script async src="static/js/autotrack.js"></script>
-
-    
+{% block head %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link type="text/css" rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
 
-</head>
-<body>
-<div class="navbar-ul">
-    <ul id="navbar-list" class="list-inline">
-        <li><a class="navbar-ref" href="/">Home</a></li>
-        <li><a class="navbar-ref" href="/about">About</a></li>
-        <li><a class="navbar-ref" href="/contact">Contact</a></li>
-        <li><a class="navbar-ref" href="/blog">Blog</a></li>
-    </ul>
-</div>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/about.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script>
+{% endblock %}
 
+{% block body %}
 <div class="container">
     <div class="wrapper fixed-wrapper">
         <img class="photo" src="/static/images/me.jpg" alt="Photo of Saurish">
@@ -79,7 +35,7 @@
                 <p class="text-content">
                     I'm the co-founder of <a href="https://ataraxia.envisionnew.org" target="_blank">Ataraxia</a>, a nonprofit with a goal to improve
                     the mental health of the homeless populations in San Jose. Ataraxia creates care kits with mental health
-                    education and materials. At Ataraxia, we strive to create a society where mental healthillnesses are
+                    education and materials. At Ataraxia, we strive to create a society where mental health illnesses are
                     more accepted and homeless populations can receive the help they need without feeling outcasted.
                 </p>
                 <p class="text-content">
@@ -94,8 +50,7 @@
                     Clubs: secretary of Synthetic Biology, secretary of Volleyball, LD admin board in Speech and Debate,
                     member of Biomedical Engineering, member of Programming.
                 </p>
-                <br>
-                <br>
+                <br><br><br>
                 <div class="social-icons">
                     <a target="_blank" href="https://www.facebook.com/saurish.srivastava.10/">
                         <img class="title-logo" src="static/images/facebook.svg">
@@ -113,5 +68,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+{% endblock %}
