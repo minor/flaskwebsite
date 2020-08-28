@@ -1,5 +1,5 @@
-# https://saurish.tk
+# http://saurish.herokuapp.com/
 
-Hi! These are the files for the my own website! It's coded using Python Flask.
+Hi! These are the files that I used for my **old** website. This website was coded with Python Flask. A large portion of this has been taken from @crearo[https://github.com/crearo].
 
 Let me know if you have any questions!
